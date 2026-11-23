@@ -12,7 +12,7 @@ utilities — was developed and validated on real hardware.
 > [!WARNING]
 > **PAW3395 `VDD` must be supplied with 1.9 V, never 3.3 V.** Only `VDDIO` may be tied to
 > 3.3 V. Feeding 3.3 V into `VDD` exceeds the absolute maximum rating and destroys the sensor.
-> See [docs/hardware-design-guide.zh-CN.md](docs/hardware-design-guide.zh-CN.md) before wiring.
+> See [hardware/README.md](hardware/README.md) before wiring or ordering boards.
 
 ---
 
@@ -52,11 +52,16 @@ utilities — was developed and validated on real hardware.
 | 5-pin mechanical encoder | Scroll wheel |
 | nPM1300 PMIC (on-module) | 3.3 V rail, charger, fuel gauge |
 | ProMicro nRF52840 | USB dongle (UF2 bootloader) |
-| Custom mainboard | Switch / sensor / LDO / antenna carrier |
+| Custom carrier board | Sensor, switches, encoder and antenna; schematic + PCB in `hardware/` |
 
-The sensor and module are plugged onto a custom mouse mainboard. The board-level design
-notes (in Chinese) live in
-[docs/hardware-design-guide.zh-CN.md](docs/hardware-design-guide.zh-CN.md).
+The module and sensor are plugged onto a custom carrier board. The schematic and PCB layout
+are maintained as an **EasyEDA Pro (嘉立创EDA专业版)** project in
+[hardware/easyeda/](hardware/easyeda/). See [hardware/README.md](hardware/README.md) for
+opening the project, fabrication checks and enclosure notes.
+
+The mouse shell is a **third-party open model** distributed on Thingiverse
+([thing:6187528](https://www.thingiverse.com/thing:6187528)). Its license is defined by
+that page and is not covered by this repository's MIT license.
 
 ### Pinout (XIAO header → PAW3395 / peripherals)
 
@@ -122,8 +127,9 @@ difference. See [firmware_nrf54lm20a/README.md](firmware_nrf54lm20a/README.md) a
 │   └── prj_esb.conf         ESB PRX variant
 ├── mouse_driver/            PyQt5 PC configuration tool
 ├── tools/                   Flashing, capture, RAW-input and verification utilities
+├── hardware/                EasyEDA Pro schematic / PCB project and enclosure notes
 ├── boards/                  Vendored Seeed XIAO nRF54LM20A board definitions (Apache-2.0)
-└── docs/                    Hardware design guide
+└── docs/                    Design notes, incl. the archived nRF52840 prototype guide
 ```
 
 ---

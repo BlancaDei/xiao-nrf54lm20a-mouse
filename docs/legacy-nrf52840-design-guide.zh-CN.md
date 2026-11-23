@@ -1,4 +1,11 @@
-# 无线鼠标主板设计指南
+# 无线鼠标主板设计指南（早期 nRF52840 原型，已弃用）
+
+> [!NOTE]
+> 本文档对应最早期的 **nRF52840 单芯片**板卡原型，仅作为设计思路与踩坑记录保留。
+> 现行硬件已改为 **Seeed XIAO nRF54LM20A** 方案，原理图与 PCB 的最终来源是
+> `hardware/easyeda/` 下的嘉立创EDA专业版工程文件，接线以
+> [`firmware_nrf54lm20a/app.overlay`](../firmware_nrf54lm20a/app.overlay) 为准。
+> PAW3395 供电、天线、微动等模块的分析仍可参考，但不要照抄 nRF52840 核心电路。
 
 ## 📋 物料清单回顾
 

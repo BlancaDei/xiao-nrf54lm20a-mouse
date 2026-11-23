@@ -10,7 +10,7 @@
 > [!WARNING]
 > **PAW3395 的 `VDD` 必须接 1.9V，绝对不能接 3.3V**，只有 `VDDIO` 可以接 3.3V。
 > 给 `VDD` 上 3.3V 会超出绝对最大额定值直接烧毁传感器。
-> 接线前请先看 [docs/hardware-design-guide.zh-CN.md](docs/hardware-design-guide.zh-CN.md)。
+> 接线或下单打板前请先看 [hardware/README.zh-CN.md](hardware/README.zh-CN.md)。
 
 ---
 
@@ -43,10 +43,15 @@
 | 5 脚机械编码器 | 滚轮 |
 | nPM1300 PMIC（模块板载） | 3.3V 供电、充电、电量计 |
 | ProMicro nRF52840 | USB 接收器（UF2 bootloader） |
-| 自制鼠标主板 | 微动、传感器、LDO、天线载体 |
+| 自制载板 | 传感器、微动、编码器与天线，原理图与 PCB 见 `hardware/` |
 
-传感器与模块插在自制鼠标主板上，板级设计说明见
-[docs/hardware-design-guide.zh-CN.md](docs/hardware-design-guide.zh-CN.md)。
+模块与传感器插在自制载板上。原理图与 PCB layout 以 **嘉立创EDA专业版** 工程的形式
+维护在 [hardware/easyeda/](hardware/easyeda/) 下；打开工程、打样检查与外壳说明见
+[hardware/README.zh-CN.md](hardware/README.zh-CN.md)。
+
+鼠标外壳是 **第三方开源模型**，发布在 Thingiverse
+（[thing:6187528](https://www.thingiverse.com/thing:6187528)），其许可证以原页面为准，
+不适用本仓库的 MIT 协议。
 
 ### 引脚分配（XIAO 排针 → PAW3395 / 外设）
 
@@ -110,8 +115,9 @@
 │   └── prj_esb.conf         ESB PRX 变体
 ├── mouse_driver/            PyQt5 上位机配置工具
 ├── tools/                   烧录、抓串口、RAW 采样与连接校验工具
+├── hardware/                嘉立创EDA专业版原理图 / PCB 工程与外壳说明
 ├── boards/                  Seeed XIAO nRF54LM20A 板级定义（Apache-2.0，随仓库提供）
-└── docs/                    硬件设计文档
+└── docs/                    设计说明，含归档的 nRF52840 原型指南
 ```
 
 ---
