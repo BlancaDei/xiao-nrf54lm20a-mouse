@@ -14,6 +14,18 @@
 
 ---
 
+## 实机照片
+
+| 成品 | 底部 |
+| --- | --- |
+| ![成品](docs/images/mouse-assembled.jpg) | ![底部](docs/images/mouse-bottom.jpg) |
+
+| 主板 PCB | 侧键 PCB 安装效果 |
+| --- | --- |
+| ![主板 PCB](docs/images/pcb-main.jpg) | ![侧键 PCB](docs/images/pcb-sidekeys.jpg) |
+
+---
+
 ## 功能特性
 
 - **1 kHz 无线回报率**：事件驱动主循环，每个连接事件只发最新位移，拥塞时不丢位移。
@@ -118,7 +130,7 @@
 ├── tools/                   烧录、抓串口、RAW 采样与连接校验工具
 ├── hardware/                嘉立创EDA专业版原理图 / PCB 工程与外壳说明
 ├── boards/                  Seeed XIAO nRF54LM20A 板级定义（Apache-2.0，随仓库提供）
-└── docs/                    设计说明，含归档的 nRF52840 原型指南
+└── docs/                    实机照片与设计说明，含归档的 nRF52840 原型指南
 ```
 
 ---

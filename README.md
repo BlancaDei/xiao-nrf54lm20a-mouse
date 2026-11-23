@@ -16,6 +16,18 @@ utilities — was developed and validated on real hardware.
 
 ---
 
+## Gallery
+
+| Finished mouse | Bottom view |
+| --- | --- |
+| ![Finished mouse](docs/images/mouse-assembled.jpg) | ![Bottom view](docs/images/mouse-bottom.jpg) |
+
+| Main PCB | Side-key PCB installed |
+| --- | --- |
+| ![Main PCB](docs/images/pcb-main.jpg) | ![Side-key PCB](docs/images/pcb-sidekeys.jpg) |
+
+---
+
 ## Features
 
 - **1 kHz wireless polling** — event-driven main loop, position deltas batched per
@@ -132,7 +144,7 @@ difference. See [firmware_nrf54lm20a/README.md](firmware_nrf54lm20a/README.md) a
 ├── tools/                   Flashing, capture, RAW-input and verification utilities
 ├── hardware/                EasyEDA Pro schematic / PCB projects and enclosure notes
 ├── boards/                  Vendored Seeed XIAO nRF54LM20A board definitions (Apache-2.0)
-└── docs/                    Design notes, incl. the archived nRF52840 prototype guide
+└── docs/                    Photos, design notes and the archived nRF52840 prototype guide
 ```
 
 ---
