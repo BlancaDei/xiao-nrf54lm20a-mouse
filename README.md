@@ -54,13 +54,15 @@ utilities — was developed and validated on real hardware.
 | ProMicro nRF52840 | USB dongle (UF2 bootloader) |
 | Custom carrier board | Sensor, switches, encoder and antenna; schematic + PCB in `hardware/` |
 
-The module and sensor are plugged onto a custom carrier board. The schematic and PCB layout
-are maintained as an **EasyEDA Pro (嘉立创EDA专业版)** project in
-[hardware/easyeda/](hardware/easyeda/). See [hardware/README.md](hardware/README.md) for
-opening the project, fabrication checks and enclosure notes.
+The module and sensor are plugged onto a custom carrier board. The schematics and PCB
+layouts are maintained as two **EasyEDA Pro (嘉立创EDA专业版)** projects in
+[hardware/easyeda/](hardware/easyeda/) — `Board1` (main board) and `侧键` (side-key board).
+See [hardware/README.md](hardware/README.md) for the component selection, fabrication
+checks and enclosure notes.
 
 The mouse shell is a **third-party open model** distributed on Thingiverse
-([thing:6187528](https://www.thingiverse.com/thing:6187528)). Its license is defined by
+([thing:6187528](https://www.thingiverse.com/thing:6187528)). The carrier board is designed
+around this shell, so the stock PCB fits it directly. The shell's license is defined by
 that page and is not covered by this repository's MIT license.
 
 ### Pinout (XIAO header → PAW3395 / peripherals)
@@ -127,7 +129,7 @@ difference. See [firmware_nrf54lm20a/README.md](firmware_nrf54lm20a/README.md) a
 │   └── prj_esb.conf         ESB PRX variant
 ├── mouse_driver/            PyQt5 PC configuration tool
 ├── tools/                   Flashing, capture, RAW-input and verification utilities
-├── hardware/                EasyEDA Pro schematic / PCB project and enclosure notes
+├── hardware/                EasyEDA Pro schematic / PCB projects and enclosure notes
 ├── boards/                  Vendored Seeed XIAO nRF54LM20A board definitions (Apache-2.0)
 └── docs/                    Design notes, incl. the archived nRF52840 prototype guide
 ```

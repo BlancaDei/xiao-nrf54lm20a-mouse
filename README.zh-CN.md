@@ -45,13 +45,13 @@
 | ProMicro nRF52840 | USB 接收器（UF2 bootloader） |
 | 自制载板 | 传感器、微动、编码器与天线，原理图与 PCB 见 `hardware/` |
 
-模块与传感器插在自制载板上。原理图与 PCB layout 以 **嘉立创EDA专业版** 工程的形式
-维护在 [hardware/easyeda/](hardware/easyeda/) 下；打开工程、打样检查与外壳说明见
-[hardware/README.zh-CN.md](hardware/README.zh-CN.md)。
+模块与传感器插在自制载板上。原理图与 PCB layout 以两个 **嘉立创EDA专业版** 工程的形式
+维护在 [hardware/easyeda/](hardware/easyeda/) 下：`Board1`（主板）与 `侧键`（侧键小板）。
+元件选型、打样检查与外壳说明见 [hardware/README.zh-CN.md](hardware/README.zh-CN.md)。
 
 鼠标外壳是 **第三方开源模型**，发布在 Thingiverse
-（[thing:6187528](https://www.thingiverse.com/thing:6187528)），其许可证以原页面为准，
-不适用本仓库的 MIT 协议。
+（[thing:6187528](https://www.thingiverse.com/thing:6187528)）。载板就是按该外壳设计的，
+原版 PCB 可直接装入；其许可证以原页面为准，不适用本仓库的 MIT 协议。
 
 ### 引脚分配（XIAO 排针 → PAW3395 / 外设）
 

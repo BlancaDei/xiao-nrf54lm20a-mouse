@@ -11,12 +11,28 @@ expander and the antenna.
 
 | Path | Description |
 | --- | --- |
-| `easyeda/` | 嘉立创EDA专业版 (EasyEDA Pro) project — schematic and PCB layout |
+| `easyeda/Board1.epro2` | 嘉立创EDA专业版 (EasyEDA Pro) main board — schematic and PCB layout |
+| `easyeda/侧键.epro2` | Side-key daughter board — schematic and PCB layout |
 | `../docs/` | Design notes and the legacy nRF52840 prototype guide |
 
-The EasyEDA Pro project is the **single source of truth** for the schematic and the
-layout. Gerbers, BOM and pick-and-place files should be generated from it rather than
+The EasyEDA Pro projects are the **single source of truth** for the schematics and the
+layout. Gerbers, BOM and pick-and-place files should be generated from them rather than
 edited by hand.
+
+## Component selection
+
+The switches and encoder in the EDA projects use **borrowed footprints** — they are not
+the real part numbers. The actual parts fitted are:
+
+| Position | Part |
+| --- | --- |
+| Left / right click | Omron **D2FP-FN2** optical switch |
+| Middle click | HUANO **7.8 mm green-dot** long straight-leg switch |
+| Encoder | **TTC 9 mm gold wheel** |
+| Side buttons | 2× HUANO **two-pin right-bend with positioning post** |
+
+The same note is stored in each project's `description` field, so it is visible in the
+EDA project information panel.
 
 ## Opening the project
 
@@ -48,5 +64,6 @@ The model is distributed by its original author on Thingiverse. **Its license is
 defined by that page**, not by this repository's MIT license — check it before
 redistributing or selling printed shells, and credit the original author.
 
-If you change the PCB, verify the shell's internal clearances (sensor height, switch
-posts, battery bay, USB opening) before printing.
+The carrier board was designed **around this shell**, so the stock PCB fits the model
+without modification. If you change the PCB, re-check the internal clearances (sensor
+height, switch posts, battery bay, USB opening) before printing.
