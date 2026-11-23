@@ -6,7 +6,7 @@ Open them with `文件 → 打开` (use `文件 → 导入` if you received a `.
 | File | Board |
 | --- | --- |
 | `Board1.epro2` | Main board: XIAO nRF54LM20A carrier, PAW3395, switches, encoder, I²C expander, antenna |
-| `侧键.epro2` | Side-key daughter board: two side switches |
+| `SideKeys.epro2` | Side-key daughter board: two side switches (project title: 侧键) |
 
 ## Component selection / 元件选型
 

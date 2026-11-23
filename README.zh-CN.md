@@ -46,7 +46,7 @@
 | 自制载板 | 传感器、微动、编码器与天线，原理图与 PCB 见 `hardware/` |
 
 模块与传感器插在自制载板上。原理图与 PCB layout 以两个 **嘉立创EDA专业版** 工程的形式
-维护在 [hardware/easyeda/](hardware/easyeda/) 下：`Board1`（主板）与 `侧键`（侧键小板）。
+维护在 [hardware/easyeda/](hardware/easyeda/) 下：`Board1`（主板）与 `SideKeys`（侧键小板）。
 元件选型、打样检查与外壳说明见 [hardware/README.zh-CN.md](hardware/README.zh-CN.md)。
 
 鼠标外壳是 **第三方开源模型**，发布在 Thingiverse
@@ -244,3 +244,4 @@ Report `0x06` 与接收器通信（协议见
 - Nordic Semiconductor：nRF Connect SDK、HIDS 与 ESB 支持。
 - Seeed Studio：XIAO nRF54LM20A 模块与板级定义。
 - 原相科技：PAW3395 数据手册。
+- 老项：鼠标外壳模型（Thingiverse，CC BY）。

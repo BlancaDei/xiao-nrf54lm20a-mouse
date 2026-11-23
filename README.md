@@ -56,7 +56,7 @@ utilities — was developed and validated on real hardware.
 
 The module and sensor are plugged onto a custom carrier board. The schematics and PCB
 layouts are maintained as two **EasyEDA Pro (嘉立创EDA专业版)** projects in
-[hardware/easyeda/](hardware/easyeda/) — `Board1` (main board) and `侧键` (side-key board).
+[hardware/easyeda/](hardware/easyeda/) — `Board1` (main board) and `SideKeys` (side-key board).
 See [hardware/README.md](hardware/README.md) for the component selection, fabrication
 checks and enclosure notes.
 
@@ -266,3 +266,4 @@ under Apache-2.0 — see [boards/NOTICE.md](boards/NOTICE.md).
 - Nordic Semiconductor for the nRF Connect SDK, HIDS and ESB support.
 - Seeed Studio for the XIAO nRF54LM20A module and board definitions.
 - PixArt for the PAW3395 datasheet.
+- 老项 on Thingiverse for the mouse shell model (CC BY).

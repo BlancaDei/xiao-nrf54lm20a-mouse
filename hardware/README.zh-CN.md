@@ -10,7 +10,7 @@
 | 路径 | 说明 |
 | --- | --- |
 | `easyeda/Board1.epro2` | 嘉立创EDA专业版主板工程 —— 原理图与 PCB layout |
-| `easyeda/侧键.epro2` | 侧键小板工程 —— 原理图与 PCB layout |
+| `easyeda/SideKeys.epro2` | 侧键小板工程 —— 原理图与 PCB layout |
 | `../docs/` | 设计说明，以及早期 nRF52840 原型的归档文档 |
 
 嘉立创EDA专业版工程是原理图与 PCB 的**唯一事实来源**。Gerber、BOM 与坐标文件
@@ -52,10 +52,11 @@
 
 鼠标外壳是第三方开源模型，不属于本仓库：
 
+- **VGN F1 系列改装 Viper MINI SE 车壳（Remix）**，作者 **老项**
 - <https://www.thingiverse.com/thing:6187528>
+- 许可：**CC BY（知识共享署名）**，以 Thingiverse 页面标注为准。
 
-模型由原作者发布在 Thingiverse，**其许可证以原页面为准**，不适用本仓库的 MIT 协议。
-二次分发或售卖打印件前请先确认许可条件，并注明原作者。
+该许可独立于本仓库的 MIT 协议。再分发模型或售卖打印件时请保留作者署名。
 
 载板就是按这个外壳设计的，原版 PCB 可直接装入，无需修改模型。如果改动了 PCB，
 打印前请复核外壳内部间隙（传感器高度、微动柱、电池仓、USB 开孔）。

@@ -12,7 +12,7 @@ expander and the antenna.
 | Path | Description |
 | --- | --- |
 | `easyeda/Board1.epro2` | 嘉立创EDA专业版 (EasyEDA Pro) main board — schematic and PCB layout |
-| `easyeda/侧键.epro2` | Side-key daughter board — schematic and PCB layout |
+| `easyeda/SideKeys.epro2` | Side-key daughter board — schematic and PCB layout |
 | `../docs/` | Design notes and the legacy nRF52840 prototype guide |
 
 The EasyEDA Pro projects are the **single source of truth** for the schematics and the
@@ -58,11 +58,12 @@ The project is designed for JLCPCB-compatible fabrication. Before placing an ord
 
 The mouse shell is a third-party open model, not part of this repository:
 
+- **VGN F1 series Viper Mini SE shell (Remix)** by **老项** on Thingiverse
 - <https://www.thingiverse.com/thing:6187528>
+- License: **CC BY** (Creative Commons Attribution), as declared on the Thingiverse page.
 
-The model is distributed by its original author on Thingiverse. **Its license is
-defined by that page**, not by this repository's MIT license — check it before
-redistributing or selling printed shells, and credit the original author.
+This license is separate from this repository's MIT license. Keep the author credit when
+redistributing the model or selling printed shells.
 
 The carrier board was designed **around this shell**, so the stock PCB fits the model
 without modification. If you change the PCB, re-check the internal clearances (sensor
