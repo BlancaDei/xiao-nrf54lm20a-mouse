@@ -52,11 +52,13 @@
 
 鼠标外壳是第三方开源模型，不属于本仓库：
 
-- **VGN F1 系列改装 Viper MINI SE 车壳（Remix）**，作者 **老项**
-- <https://www.thingiverse.com/thing:6187528>
-- 许可：**CC BY（知识共享署名）**，以 Thingiverse 页面标注为准。
+- **VGN F1 系列改装 Viper MINI SE 车壳（Remix）**，作者 **老项** —
+  <https://www.thingiverse.com/thing:6187528>
+- remix 自 **VGN F1 pro(max) mini SE**，作者 **WienerFilter** —
+  <https://www.thingiverse.com/thing:6078102>
+- 许可：两个模型均为 **CC BY 4.0**（知识共享署名 4.0）。
 
-该许可独立于本仓库的 MIT 协议。再分发模型或售卖打印件时请保留作者署名。
+该许可独立于本仓库的 MIT 协议。再分发模型或售卖打印件时请保留两位作者的署名。
 
 载板就是按这个外壳设计的，原版 PCB 可直接装入，无需修改模型。如果改动了 PCB，
 打印前请复核外壳内部间隙（传感器高度、微动柱、电池仓、USB 开孔）。

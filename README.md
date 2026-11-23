@@ -60,10 +60,11 @@ layouts are maintained as two **EasyEDA Pro (嘉立创EDA专业版)** projects i
 See [hardware/README.md](hardware/README.md) for the component selection, fabrication
 checks and enclosure notes.
 
-The mouse shell is a **third-party open model** distributed on Thingiverse
-([thing:6187528](https://www.thingiverse.com/thing:6187528)). The carrier board is designed
-around this shell, so the stock PCB fits it directly. The shell's license is defined by
-that page and is not covered by this repository's MIT license.
+The mouse shell is a **third-party open model** by **老项** — a remix of
+[VGN F1 pro(max) mini SE](https://www.thingiverse.com/thing:6078102) by **WienerFilter** —
+published on Thingiverse as [thing:6187528](https://www.thingiverse.com/thing:6187528)
+under **CC BY 4.0**. The carrier board is designed around this shell, so the stock PCB fits
+it directly. The model's license is separate from this repository's MIT license.
 
 ### Pinout (XIAO header → PAW3395 / peripherals)
 
@@ -266,4 +267,5 @@ under Apache-2.0 — see [boards/NOTICE.md](boards/NOTICE.md).
 - Nordic Semiconductor for the nRF Connect SDK, HIDS and ESB support.
 - Seeed Studio for the XIAO nRF54LM20A module and board definitions.
 - PixArt for the PAW3395 datasheet.
-- 老项 on Thingiverse for the mouse shell model (CC BY).
+- 老项 for the remixed mouse shell and WienerFilter for the original VGN F1 mini SE model
+  (Thingiverse, CC BY 4.0).

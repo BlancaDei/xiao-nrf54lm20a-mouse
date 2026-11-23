@@ -58,11 +58,13 @@ The project is designed for JLCPCB-compatible fabrication. Before placing an ord
 
 The mouse shell is a third-party open model, not part of this repository:
 
-- **VGN F1 series Viper Mini SE shell (Remix)** by **老项** on Thingiverse
-- <https://www.thingiverse.com/thing:6187528>
-- License: **CC BY** (Creative Commons Attribution), as declared on the Thingiverse page.
+- **VGN F1 series Viper Mini SE shell (Remix)** by **老项** —
+  <https://www.thingiverse.com/thing:6187528>
+- Remix of **VGN F1 pro(max) mini SE** by **WienerFilter** —
+  <https://www.thingiverse.com/thing:6078102>
+- License: **CC BY 4.0** (Creative Commons Attribution 4.0) for both models.
 
-This license is separate from this repository's MIT license. Keep the author credit when
+This license is separate from this repository's MIT license. Keep both author credits when
 redistributing the model or selling printed shells.
 
 The carrier board was designed **around this shell**, so the stock PCB fits the model
