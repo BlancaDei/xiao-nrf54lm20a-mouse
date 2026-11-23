@@ -1,0 +1,66 @@
+# ---- Zephyr / CMake build output ----
+build/
+build-esb/
+**/build/
+**/build-esb/
+.pio/
+.west/
+.zephyr/
+*.elf
+*.hex
+*.bin
+*.uf2
+*.map
+*.o
+*.obj
+*.d
+*.stat
+*.lst
+*.dis
+compile_commands.json
+CMakeCache.txt
+CMakeFiles/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.trae/
+.screenshots/
+.DS_Store
+Thumbs.db
+*.swp
+
+# ---- 本地调试产物与日志 ----
+logs/
+*.log
+*.csv
+endurance_*.txt
+kovvak_*.txt
+rawinput_*.csv
+live_*.txt
+com[0-9]_*.txt
+diag_*.txt
+btn_*.txt
+cpi_*.txt
+_*.txt
+3395_text*.txt
+.wtest
+
+# ---- 未纳入开源的早期原型与个人文档 ----
+firmware/
+# 发射端目录下的一次性调试脚本（正式烧录工具是 tools/xiao_flash.py）
+firmware_nrf54lm20a/*.py
+third_party/
+COMPLETE_WORKFLOW.md
+开发环境检查报告.md
+*.pdf
+*.pptx
+*.docx
+5-10_交流通路.png
+5-10_交流通路.svg

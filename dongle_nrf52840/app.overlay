@@ -1,0 +1,24 @@
+/*
+ * HID 设备实例：1 ms 轮询周期，4 字节鼠标报告（btn, dx, dy, wheel）
+ */
+
+#include <zephyr/dt-bindings/pwm/pwm.h>
+
+/*
+ * 板级 pwmleds 给 red_pwm_led 标了 PWM_POLARITY_INVERTED，但这块 ProMicro
+ * 的红灯是高点平点亮（gpio-leds 也标的 GPIO_ACTIVE_HIGH）。极性标反会让
+ * brightness=0 变成常亮，这里改回正常极性。
+ */
+&red_pwm_led {
+	pwms = <&pwm0 0 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
+};
+
+/ {
+	hid_dev_0: hid_dev_0 {
+		compatible = "zephyr,hid-device";
+		label = "HID0";
+		protocol-code = "none";
+		in-polling-period-us = <1000>;
+		in-report-size = <64>;
+	};
+};

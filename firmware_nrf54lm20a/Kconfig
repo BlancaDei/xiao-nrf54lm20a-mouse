@@ -1,0 +1,7 @@
+mainmenu "XIAO nRF54LM20A gaming mouse"
+
+config APP_ESB
+	bool "Use 2.4G ESB link (ProMicro dongle) instead of BLE HID"
+	default n
+
+source "Kconfig.zephyr"

@@ -1,0 +1,48 @@
+# XIAO 2.4G dongle（ProMicro nRF52840）
+
+mainmenu "XIAO 2.4G dongle"
+
+config APP_ESB
+	bool "Use 2.4G ESB PRX instead of BLE central"
+	default n
+
+# sample_usbd_init.c 用到的描述符选项（自备一套，避免依赖 Zephyr sample 树）
+menu "USB descriptor options"
+	depends on USB_DEVICE_STACK_NEXT
+
+config SAMPLE_USBD_MANUFACTURER
+	string "USB manufacturer string"
+	default "xiao-fw"
+
+config SAMPLE_USBD_PRODUCT
+	string "USB product string"
+	default "XIAO 2.4G Dongle"
+
+config SAMPLE_USBD_VID
+	hex "USB Vendor ID"
+	default 0x1915
+
+config SAMPLE_USBD_PID
+	hex "USB Product ID"
+	default 0x4242
+
+config SAMPLE_USBD_SELF_POWERED
+	bool "Self-powered attribute"
+	default n
+
+config SAMPLE_USBD_REMOTE_WAKEUP
+	bool "Remote wakeup attribute"
+	default n
+
+config SAMPLE_USBD_MAX_POWER
+	int "bMaxPower (2 mA units)"
+	default 125
+
+config SAMPLE_USBD_20_EXTENSION_DESC
+	bool "USB 2.0 Extension Descriptor"
+	default n
+	depends on USBD_BOS_SUPPORT
+
+endmenu
+
+source "Kconfig.zephyr"
